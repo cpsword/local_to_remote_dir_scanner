@@ -3,14 +3,15 @@ import Queue
 import threading
 import os
 import urllib2
+import sys
 
 def parse_args():
-    parser = optparse.OptionParser('usage:%prog -u targer_url -d local_dir')
+    parser = optparse.OptionParser('usage:%prog -d local_dir target_url')
     parser.add_option('-t','--threads',dest='threads',type='int',default=5,help='set the threads to scan')
-    parser.add_option('-d','--dir',dest='directory',type='string',help='set local directory to compare with remote directory')
+    parser.add_option('-d','--dir',dest='directory',type='string',help='set the local directory to compare with the remote directory')
     (options,args) = parser.parse_args()
     if len(args) < 1:
-        paser.print_help()
+        parser.print_help()
         sys.exit(0)
     return options,args
 
