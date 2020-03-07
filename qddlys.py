@@ -1,6 +1,7 @@
 #-*- coding:utf-8 -*-
 import urllib2
 import re
+import sys
 for idnum in xrange(102,130):
     headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Mobile Safari/537.36"}
     url = "http://www.qddlys.com/NewsDetail.aspx?ID="+str(idnum)
@@ -16,4 +17,4 @@ for idnum in xrange(102,130):
         f.close()
     except Exception:
         continue
-
+    
