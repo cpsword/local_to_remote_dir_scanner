@@ -7,7 +7,6 @@ import urllib2
 def parse_args():
     parser = optparse.OptionParser('usage:%prog -u targer_url -d local_dir')
     parser.add_option('-t','--threads',dest='threads',type='int',default=5,help='set the threads to scan')
-    #parser.add_option('-u','--url',dest='domain',type='string',help='set the url to scan')
     parser.add_option('-d','--dir',dest='directory',type='string',help='set local directory to compare with remote directory')
     (options,args) = parser.parse_args()
     if len(args) < 1:
