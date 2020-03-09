@@ -1,4 +1,4 @@
-Usage: usage:ptarg.py -d local_dir target_url
+Usage: usage:local_to_remote_dir_scanner.py -d local_dir target_url
 
 
 Options:
